@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xiyawang</title>
+
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fdfcfb;
+      --ink: #1a1814;
+      --ink-light: #9a9690;
+      --rule: #e6e3dd;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      background: var(--bg);
+    }
+
+    .nav-logo {
+      font-size: 16px;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .nav-info {
+      font-size: 16px;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.15s;
+    }
+
+    .nav-info:hover { color: var(--ink); }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      position: fixed;
+      top: 65px; left: 0; right: 0;
+      z-index: 99;
+      display: flex;
+      gap: 28px;
+      padding: 12px 40px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .filter-btn {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      background: none;
+      border: none;
+      color: var(--ink-light);
+      cursor: pointer;
+      padding: 0;
+      transition: color 0.15s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active { color: var(--ink); }
+
+    main { padding-top: 112px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .work-item {
+      padding: 40px;
+      border-bottom: 1px solid var(--rule);
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    .work-item:nth-child(odd) { border-right: 1px solid var(--rule); }
+
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    .work-image {
+      overflow: hidden;
+      background: #e8e4dc;
+    }
+
+    .work-image img {
+      width: 100%;
+      height: auto;
+      object-fit: unset;
+      display: block;
+      transition: opacity 0.3s;
+    }
+
+    .work-item:hover .work-image img { opacity: 0.9; }
+
+    .work-meta { margin-top: 14px; margin-bottom: 12px; }
+
+    .work-title {
+      font-size: 16px;
+      font-weight: 400;
+      font-style: italic;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .work-info {
+      font-size: 16px;
+      color: var(--ink);
+    }
+
+    .work-actions { display: flex; gap: 8px; }
+
+    .btn {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      padding: 5px 12px;
+      border: 1px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: inline-block;
+    }
+
+    .btn:hover { background: var(--ink); color: var(--bg); }
+
+    .btn-ghost {
+      border-color: var(--rule);
+      color: var(--ink-light);
+      pointer-events: none;
+      cursor: default;
+    }
+
+    .btn-ghost:hover {
+      background: transparent;
+      color: var(--ink-light);
+    }
+
+    [id^='shopify-mount-'] { display: none !important; }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 22px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer span, footer a {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      color: var(--ink-light);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--ink); }
+
+    @media (max-width: 680px) {
+      nav { padding: 18px 20px; }
+      .filter-bar { top: 57px; padding: 10px 20px; gap: 20px; }
+      main { padding-top: 104px; }
+      .grid { grid-template-columns: 1fr; }
+      .work-item { padding: 28px 20px; border-right: none !important; }
+      footer { padding: 20px; flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener" class="nav-logo">@cupofchiaa</a>
+    <a href="cv.html" class="nav-info">INFO</a>
+  </nav>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="painting">Paintings</button>
+    <button class="filter-btn" data-filter="printmaking">Printmaking</button>
+    <button class="filter-btn" data-filter="sketches">Sketches</button>
+  </div>
+
+  <main>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <footer>
+    <span>© 2026</span>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="config.js"></script>
+  <script>
+    const grid = document.getElementById("grid");
+
+    WORKS.forEach((work, i) => {
+      const inquireSubject = 'Inquiry: ' + work.title;
+      const inquireBody =
+        'Hi Xiya,\n\n' +
+        'I\'m interested in purchasing the original work:\n\n' +
+        '  ' + work.title + '\n' +
+        '  ' + work.medium + ', ' + work.dimensions + '\n\n' +
+        'Could you let me know if it\'s still available and the asking price?\n\n' +
+        'Thank you,\n[Your name]';
+
+      const isPhoto = (work.category === 'printmaking');
+      const hasShopifyId = work.shopifyProductId && work.shopifyProductId.trim() !== '';
+
+      const buyPrintBtn = hasShopifyId
+        ? '<a href="https://maxojkb.myshopify.com/products/' + work.shopifyProductId + '" class="btn" target="_blank" rel="noopener noreferrer">Buy Print</a>'
+        : '<span class="btn btn-ghost">Buy Print</span>';
+
+      const inquireBtn = isPhoto
+        ? ''
+        : work.originalAvailable
+          ? '<a href="mailto:xiyawang33@gmail.com?subject=' + encodeURIComponent(inquireSubject) + '&body=' + encodeURIComponent(inquireBody) + '" class="btn">Own the Original</a>'
+          : '<span class="btn btn-ghost">Inquire</span>';
+
+      const item = document.createElement("div");
+      item.className = "work-item";
+      item.dataset.category = work.category || "painting";
+      item.style.animationDelay = `${0.04 + i * 0.05}s`;
+      item.innerHTML =
+        '<div class="work-image">' +
+          '<img src="' + work.image + '" alt="' + work.title + '" loading="lazy" />' +
+        '</div>' +
+        '<div class="work-meta">' +
+          '<span class="work-title">' + work.title + '</span>' +
+          '<span class="work-info">' + work.medium + ', ' + work.dimensions + '</span>' +
+        '</div>' +
+        '<div class="work-actions">' +
+          buyPrintBtn +
+          inquireBtn +
+        '</div>';
+
+      // hide non-paintings on initial load
+      if ((work.category || 'painting') !== 'painting') {
+        item.style.display = 'none';
+      }
+
+      grid.appendChild(item);
+    });
+
+    // fix borders for initially visible items
+    function fixBorders() {
+      const visible = [...document.querySelectorAll('.work-item')].filter(i => i.style.display !== 'none');
+      visible.forEach((item, idx) => {
+        item.style.borderRight = (idx % 2 === 0) ? '1px solid var(--rule)' : '';
+      });
+    }
+    fixBorders();
+
+    // ── Filter logic ──────────────────────────────────────────────────────
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.work-item').forEach(item => {
+          item.style.display = item.dataset.category === filter ? '' : 'none';
+        });
+
+        fixBorders();
+      });
+    });  </script>
+
+</body>
+</html>

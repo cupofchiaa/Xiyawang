@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>maxojkb — info</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fdfcfb;
+      --ink: #000000;
+      --ink-light: #888;
+      --rule: #e6e3dd;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      background: var(--bg);
+    }
+
+    .nav-logo {
+      font-size: 16px;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .nav-work {
+      font-size: 16px;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.15s;
+    }
+
+    .nav-work:hover { color: var(--ink); }
+
+    main {
+      padding-top: 76px;
+      max-width: 560px;
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 120px;
+    }
+
+    .name-block {
+      padding: 56px 0 44px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .cv-name {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .cv-birth {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .cv-email {
+      font-size: 16px;
+      color: var(--ink);
+      text-decoration: none;
+      display: block;
+    }
+
+    .cv-email:hover { text-decoration: underline; }
+
+    .cv-section {
+      padding: 36px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .cv-label {
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+
+    .cv-row {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 0 16px;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .cv-row:last-child { margin-bottom: 0; }
+
+    .cv-year {
+      font-size: 16px;
+      color: var(--ink);
+    }
+
+    .cv-detail {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+    }
+
+    .cv-detail em { font-style: italic; }
+
+    .cv-detail .venue {
+      display: block;
+      font-size: 16px;
+      color: var(--ink);
+    }
+
+    @media (max-width: 680px) {
+      nav { padding: 18px 20px; }
+      main { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="https://www.instagram.com/maxojkb" target="_blank" rel="noopener" class="nav-logo">@maxojkb</a>
+    <a href="index.html" class="nav-work">WORK</a>
+  </nav>
+
+  <main>
+
+    <div class="name-block">
+      <p class="cv-name">MAX[O] J. K*****-B****** </p>
+      <p class="cv-birth">b. 1999, New York, NY</p>
+      <a href="mailto:maxojkb@proton.me" class="cv-email">maxojkb@proton.me</a>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-label">Publications</p>
+
+      <div class="cv-row">
+        <span class="cv-year">2018</span>
+        <div class="cv-detail">
+          <em>"Waiting for Fireworks."</em>
+          <span class="venue">Glimmer Train, Issue 103</span>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <span class="cv-year">2018</span>
+        <div class="cv-detail">
+          <em>"A Constitution for a Young Artist."</em>
+          <span class="venue">Glimmer Train, Bulletin 132</span>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <span class="cv-year">2017</span>
+        <div class="cv-detail">
+          <em>"Big Picture Kind of Guy."</em>
+          <span class="venue">YoungArts Writer's Anthology</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-label">Honors & Awards</p>
+
+      <div class="cv-row">
+        <span class="cv-year">2022</span>
+        <div class="cv-detail">
+          Finalist, Flash Fiction
+          <span class="venue">New Millennium Writings Awards 52</span>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <span class="cv-year">2017</span>
+        <div class="cv-detail">
+          First Place, Short Story Award for New Writers
+          <span class="venue">Glimmer Train</span>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <span class="cv-year">2017</span>
+        <div class="cv-detail">
+          Finalist, National YoungArts Foundation (Writing)
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <span class="cv-year">2017</span>
+        <div class="cv-detail">
+          Finalist, Short Story Award for New Writers
+          <span class="venue">Glimmer Train</span>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <span class="cv-year">2016</span>
+        <div class="cv-detail">
+          Finalist, Short Story Award for New Writers
+          <span class="venue">Glimmer Train</span>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <span class="cv-year">2016</span>
+        <div class="cv-detail">
+          Honorable Mention, Short Fiction
+          <span class="venue">New Millennium Writings Awards 42</span>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+</body>
+</html>

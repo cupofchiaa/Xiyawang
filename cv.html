@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xiyawang — info</title>
+
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fdfcfb;
+      --ink: #1a1814;
+      --ink-light: #9a9690;
+      --rule: #e6e3dd;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .nav-logo {
+      font-size: 16px;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .nav-work {
+      font-size: 16px;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.15s;
+    }
+
+    .nav-work:hover { color: var(--ink); }
+
+    main {
+      padding: 104px 40px 80px;
+      max-width: 660px;
+    }
+
+    /* ── HEADER ── */
+    .cv-header {
+      margin-bottom: 32px;
+    }
+
+    .cv-header .cv-name {
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .cv-header a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .cv-header a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── SECTIONS ── */
+    .cv-section {
+      margin-bottom: 32px;
+    }
+
+    .cv-section h2 {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--ink-light);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 6px;
+    }
+
+    .cv-entry {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 0 12px;
+      margin-bottom: 4px;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .cv-year {
+      color: var(--ink-light);
+      font-size: 14px;
+      padding-top: 1px;
+    }
+
+    .cv-entry a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .cv-entry a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @media (max-width: 680px) {
+      nav { padding: 18px 20px; }
+      main { padding: 88px 20px 60px; }
+      .cv-entry { grid-template-columns: 44px 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener" class="nav-logo">@cupofchiaa</a>
+    <a href="index.html" class="nav-work">WORK</a>
+  </nav>
+
+  <main>
+
+    <div class="cv-header">
+      <p class="cv-name">XIYA WANG b. 1998, New York, NY</p>
+      <a href="mailto:xiyawang33@gmail.com">xiyawang33@gmail.com</a>
+      <a href="https://xiyawang.org" target="_blank" rel="noopener">xiyawang.org</a>
+      <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener">@cupofchiaa</a>
+    </div>
+
+    <div class="cv-section">
+      <h2>Education</h2>
+      <!-- Example entry:
+      <div class="cv-entry">
+        <span class="cv-year">2020</span>
+        <span>BFA, Painting, School of Visual Arts, New York, NY</span>
+      </div>
+      -->
+    </div>
+
+    <div class="cv-section">
+      <h2>Solo Exhibitions</h2>
+      <!-- Example entry:
+      <div class="cv-entry">
+        <span class="cv-year">2024</span>
+        <span><em>Exhibition Title</em>, Gallery Name, City</span>
+      </div>
+      -->
+    </div>
+
+    <div class="cv-section">
+      <h2>Group Exhibitions</h2>
+      <!-- Example entry:
+      <div class="cv-entry">
+        <span class="cv-year">2024</span>
+        <span><em>Exhibition Title</em>, Gallery Name, City</span>
+      </div>
+      -->
+    </div>
+
+    <div class="cv-section">
+      <h2>Awards &amp; Residencies</h2>
+      <!-- Example entry:
+      <div class="cv-entry">
+        <span class="cv-year">2023</span>
+        <span>Residency Name, City</span>
+      </div>
+      -->
+    </div>
+
+    <div class="cv-section">
+      <h2>Press</h2>
+      <!-- Example entry:
+      <div class="cv-entry">
+        <span class="cv-year">2023</span>
+        <span>"Article Title," <a href="#">Publication Name</a></span>
+      </div>
+      -->
+    </div>
+
+  </main>
+
+</body>
+</html>
