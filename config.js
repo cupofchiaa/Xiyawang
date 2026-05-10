@@ -64,5 +64,25 @@ const WORKS = [
   },
 
   // Paintings — add entries with category: "painting"
+  {
+    title: "Untitled i",
+    medium: "Oil on canvas",
+    dimensions: "40x30",
+    category: "painting",
+    image: "images/IMG_5318.jpg",
+    originalAvailable: true,
+    shopifyProductId: "",
+    description: "xxx fill in later",
+  },
   // Sketches — add entries with category: "sketches"
+  {
+    title: "Fruits of Passion",
+    medium: "Linocut",
+    dimensions: "",
+    category: "sketches",
+    image: "images/fruits-of-passion.jpg",
+    originalAvailable: false,
+    shopifyProductId: "",
+    description: "Debuted March 26, 2022 at MOMO SUSHI, 239 Park Ave S, New York, NY.",
+  },
 ];

@@ -85,18 +85,16 @@
     main { padding-top: 112px; }
 
     .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: block;
+      max-width: 960px;
+      margin: 0 auto;
     }
 
     .work-item {
-      padding: 40px;
-      border-bottom: 1px solid var(--rule);
+      padding: 80px 40px;
       opacity: 0;
       animation: fadeIn 0.5s ease forwards;
     }
-
-    .work-item:nth-child(odd) { border-right: 1px solid var(--rule); }
 
     @keyframes fadeIn { to { opacity: 1; } }
 
@@ -198,8 +196,7 @@
       nav { padding: 18px 20px; }
       .filter-bar { top: 57px; padding: 10px 20px; gap: 20px; }
       main { padding-top: 104px; }
-      .grid { grid-template-columns: 1fr; }
-      .work-item { padding: 28px 20px; border-right: none !important; }
+      .work-item { padding: 48px 20px; }
       footer { padding: 20px; flex-direction: column; gap: 6px; }
     }
   </style>
@@ -246,7 +243,7 @@
         : '<span class="btn btn-ghost">Buy Print</span>';
 
       const inquireBtn = work.originalAvailable
-        ? '<a href="mailto:xiyawang33@gmail.com?subject=' + encodeURIComponent(inquireSubject) + '&body=' + encodeURIComponent(inquireBody) + '" class="btn">Own the Original</a>'
+        ? '<a href="mailto:xiyawang33@gmail.com?subject=' + encodeURIComponent(inquireSubject) + '&body=' + encodeURIComponent(inquireBody) + '" class="btn" target="_blank" rel="noopener">Own the Original</a>'
         : '<span class="btn btn-ghost">Inquire</span>';
 
       const chineseTitle = work.titleChinese
@@ -286,15 +283,6 @@
       grid.appendChild(item);
     });
 
-    // fix borders for initially visible items
-    function fixBorders() {
-      const visible = [...document.querySelectorAll('.work-item')].filter(i => i.style.display !== 'none');
-      visible.forEach((item, idx) => {
-        item.style.borderRight = (idx % 2 === 0) ? '1px solid var(--rule)' : '';
-      });
-    }
-    fixBorders();
-
     // ── Filter logic ──────────────────────────────────────────────────────
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -305,8 +293,6 @@
         document.querySelectorAll('.work-item').forEach(item => {
           item.style.display = item.dataset.category === filter ? '' : 'none';
         });
-
-        fixBorders();
       });
     });  </script>
 
