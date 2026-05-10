@@ -25,7 +25,7 @@
       background: var(--bg);
       color: var(--ink);
       font-family: 'Times New Roman', Times, serif;
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
@@ -60,6 +60,7 @@
     main {
       padding: 104px 40px 80px;
       max-width: 660px;
+      margin-left: 10%;
     }
 
     /* ── HEADER ── */
@@ -68,16 +69,21 @@
     }
 
     .cv-header .cv-name {
-      font-size: 15px;
+      font-size: 20px;
       font-weight: 400;
       margin-bottom: 10px;
+    }
+
+    .cv-header .cv-based {
+      font-size: 17px;
+      margin-bottom: 2px;
     }
 
     .cv-header a {
       display: block;
       color: var(--ink);
       text-decoration: none;
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.65;
     }
 
@@ -92,10 +98,10 @@
     }
 
     .cv-section h2 {
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 400;
-      letter-spacing: 0.1em;
-      color: var(--ink-light);
+      letter-spacing: 0.06em;
+      color: var(--ink);
       text-transform: uppercase;
       margin-bottom: 10px;
       border-bottom: 1px solid var(--rule);
@@ -104,16 +110,16 @@
 
     .cv-entry {
       display: grid;
-      grid-template-columns: 52px 1fr;
+      grid-template-columns: 88px 1fr;
       gap: 0 12px;
       margin-bottom: 4px;
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.65;
     }
 
     .cv-year {
       color: var(--ink-light);
-      font-size: 14px;
+      font-size: 16px;
       padding-top: 1px;
     }
 
@@ -127,9 +133,16 @@
       text-underline-offset: 3px;
     }
 
+    .cv-statement {
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--ink);
+      max-width: 560px;
+    }
+
     @media (max-width: 680px) {
       nav { padding: 18px 20px; }
-      main { padding: 88px 20px 60px; }
+      main { padding: 88px 20px 60px; margin-left: 0; }
       .cv-entry { grid-template-columns: 44px 1fr; }
     }
   </style>
@@ -141,66 +154,48 @@
     <a href="index.html" class="nav-work">WORK</a>
   </nav>
 
-  <main>
+  <main id="cv-main"></main>
 
-    <div class="cv-header">
-      <p class="cv-name">XIYA WANG b. 1998, New York, NY</p>
-      <a href="mailto:xiyawang33@gmail.com">xiyawang33@gmail.com</a>
-      <a href="https://xiyawang.org" target="_blank" rel="noopener">xiyawang.org</a>
-      <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener">@cupofchiaa</a>
-    </div>
+  <script src="cv-config.js"></script>
+  <script>
+    const main = document.getElementById('cv-main');
 
-    <div class="cv-section">
-      <h2>Education</h2>
-      <!-- Example entry:
-      <div class="cv-entry">
-        <span class="cv-year">2020</span>
-        <span>BFA, Painting, School of Visual Arts, New York, NY</span>
-      </div>
-      -->
-    </div>
+    // Header
+    main.innerHTML =
+      '<div class="cv-header">' +
+        '<p class="cv-name">' + CV.name + ' b. ' + CV.born + ', ' + CV.location + '.</p>' +
+        '<p class="cv-based">Based in ' + CV.basedIn + '.</p>' +
+        '<a href="mailto:' + CV.email + '">' + CV.email + '</a>' +
+      '</div>' +
+      '<div class="cv-section">' +
+        '<p class="cv-statement">' + CV.statement + '</p>' +
+      '</div>';
 
-    <div class="cv-section">
-      <h2>Solo Exhibitions</h2>
-      <!-- Example entry:
-      <div class="cv-entry">
-        <span class="cv-year">2024</span>
-        <span><em>Exhibition Title</em>, Gallery Name, City</span>
-      </div>
-      -->
-    </div>
+    // CV sections in display order
+    const sections = [
+      { key: 'education',           label: 'Education' },
+      { key: 'soloExhibitions',     label: 'Solo Exhibitions' },
+      { key: 'groupExhibitions',    label: 'Group Exhibitions' },
+      { key: 'awardsAndResidencies',label: 'Awards & Residencies' },
+      { key: 'press',               label: 'Press' },
+    ];
 
-    <div class="cv-section">
-      <h2>Group Exhibitions</h2>
-      <!-- Example entry:
-      <div class="cv-entry">
-        <span class="cv-year">2024</span>
-        <span><em>Exhibition Title</em>, Gallery Name, City</span>
-      </div>
-      -->
-    </div>
+    sections.forEach(function(section) {
+      const entries = CV[section.key] || [];
+      const entriesHTML = entries.map(function(e) {
+        return '<div class="cv-entry">' +
+          '<span class="cv-year">' + e.year + '</span>' +
+          '<span>' + e.text + '</span>' +
+        '</div>';
+      }).join('');
 
-    <div class="cv-section">
-      <h2>Awards &amp; Residencies</h2>
-      <!-- Example entry:
-      <div class="cv-entry">
-        <span class="cv-year">2023</span>
-        <span>Residency Name, City</span>
-      </div>
-      -->
-    </div>
-
-    <div class="cv-section">
-      <h2>Press</h2>
-      <!-- Example entry:
-      <div class="cv-entry">
-        <span class="cv-year">2023</span>
-        <span>"Article Title," <a href="#">Publication Name</a></span>
-      </div>
-      -->
-    </div>
-
-  </main>
+      main.innerHTML +=
+        '<div class="cv-section">' +
+          '<h2>' + section.label + '</h2>' +
+          entriesHTML +
+        '</div>';
+    });
+  </script>
 
 </body>
 </html>

@@ -117,6 +117,14 @@
 
     .work-meta { margin-top: 14px; margin-bottom: 12px; }
 
+    .work-title-chinese {
+      font-size: 13px;
+      color: var(--ink-light);
+      display: block;
+      margin-bottom: 3px;
+      letter-spacing: 0.04em;
+    }
+
     .work-title {
       font-size: 16px;
       font-weight: 400;
@@ -133,6 +141,13 @@
     }
 
     .work-actions { display: flex; gap: 8px; }
+
+    .work-description {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
 
     .btn {
       font-family: 'Times New Roman', Times, serif;
@@ -197,8 +212,8 @@
   </nav>
 
   <div class="filter-bar">
-    <button class="filter-btn active" data-filter="painting">Paintings</button>
-    <button class="filter-btn" data-filter="printmaking">Printmaking</button>
+    <button class="filter-btn active" data-filter="printmaking">Printmaking</button>
+    <button class="filter-btn" data-filter="painting">Paintings</button>
     <button class="filter-btn" data-filter="sketches">Sketches</button>
   </div>
 
@@ -224,18 +239,25 @@
         'Could you let me know if it\'s still available and the asking price?\n\n' +
         'Thank you,\n[Your name]';
 
-      const isPhoto = (work.category === 'printmaking');
       const hasShopifyId = work.shopifyProductId && work.shopifyProductId.trim() !== '';
 
       const buyPrintBtn = hasShopifyId
         ? '<a href="https://maxojkb.myshopify.com/products/' + work.shopifyProductId + '" class="btn" target="_blank" rel="noopener noreferrer">Buy Print</a>'
         : '<span class="btn btn-ghost">Buy Print</span>';
 
-      const inquireBtn = isPhoto
-        ? ''
-        : work.originalAvailable
-          ? '<a href="mailto:xiyawang33@gmail.com?subject=' + encodeURIComponent(inquireSubject) + '&body=' + encodeURIComponent(inquireBody) + '" class="btn">Own the Original</a>'
-          : '<span class="btn btn-ghost">Inquire</span>';
+      const inquireBtn = work.originalAvailable
+        ? '<a href="mailto:xiyawang33@gmail.com?subject=' + encodeURIComponent(inquireSubject) + '&body=' + encodeURIComponent(inquireBody) + '" class="btn">Own the Original</a>'
+        : '<span class="btn btn-ghost">Inquire</span>';
+
+      const chineseTitle = work.titleChinese
+        ? '<span class="work-title-chinese">' + work.titleChinese + '</span>'
+        : '';
+      const workInfo = work.dimensions
+        ? work.medium + ', ' + work.dimensions
+        : work.medium;
+      const descBlock = work.description
+        ? '<p class="work-description">' + work.description + '</p>'
+        : '';
 
       const item = document.createElement("div");
       item.className = "work-item";
@@ -246,16 +268,18 @@
           '<img src="' + work.image + '" alt="' + work.title + '" loading="lazy" />' +
         '</div>' +
         '<div class="work-meta">' +
+          chineseTitle +
           '<span class="work-title">' + work.title + '</span>' +
-          '<span class="work-info">' + work.medium + ', ' + work.dimensions + '</span>' +
+          '<span class="work-info">' + workInfo + '</span>' +
         '</div>' +
         '<div class="work-actions">' +
           buyPrintBtn +
           inquireBtn +
-        '</div>';
+        '</div>' +
+        descBlock;
 
-      // hide non-paintings on initial load
-      if ((work.category || 'painting') !== 'painting') {
+      // hide non-printmaking on initial load
+      if ((work.category || 'printmaking') !== 'printmaking') {
         item.style.display = 'none';
       }
 
