@@ -19,6 +19,7 @@
       --ink: #1a1814;
       --ink-light: #9a9690;
       --rule: #e6e3dd;
+      --sidebar-w: 160px;
     }
 
     body {
@@ -30,37 +31,63 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    nav {
+    /* ── SIDEBAR ── */
+    .sidebar {
       position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
+      top: 0; right: 0;
+      width: var(--sidebar-w);
+      height: 100vh;
+      padding: 40px 36px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 40px;
+      flex-direction: column;
       background: var(--bg);
-      border-bottom: 1px solid var(--rule);
+      z-index: 100;
     }
 
-    .nav-logo {
+    .sidebar-name {
       font-size: 16px;
-      text-decoration: none;
+      letter-spacing: 0.06em;
       color: var(--ink);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 28px;
     }
 
-    .nav-work {
-      font-size: 16px;
-      text-decoration: none;
+    .sidebar-section {
+      margin-bottom: 16px;
+    }
+
+    .sidebar-section-label {
+      display: block;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+      letter-spacing: 0.08em;
       color: var(--ink-light);
+      text-decoration: none;
       transition: color 0.15s;
     }
 
-    .nav-work:hover { color: var(--ink); }
+    .sidebar-section-label.active { color: var(--ink); }
+    a.sidebar-section-label:hover { color: var(--ink); }
 
+    .sidebar-ig {
+      margin-top: auto;
+      font-size: 15px;
+      color: var(--ink-light);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .sidebar-ig:hover { color: var(--ink); }
+
+    /* ── MAIN ── */
     main {
-      padding: 104px 40px 80px;
-      max-width: 660px;
-      margin-left: 10%;
+      padding: 60px calc(var(--sidebar-w) + 60px) 80px 60px;
+    }
+
+    .cv-content {
+      max-width: 680px;
+      margin: 0 auto;
     }
 
     /* ── HEADER ── */
@@ -140,21 +167,48 @@
       max-width: 560px;
     }
 
+    /* ── MOBILE ── */
     @media (max-width: 680px) {
-      nav { padding: 18px 20px; }
-      main { padding: 88px 20px 60px; margin-left: 0; }
+      .sidebar {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--rule);
+        gap: 20px;
+      }
+
+      .sidebar-name { margin-bottom: 0; }
+      .sidebar-section { margin-bottom: 0; }
+      .sidebar-ig { display: none; margin-top: 0; }
+
+      main { padding: 80px 20px 60px; }
       .cv-entry { grid-template-columns: 44px 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener" class="nav-logo">@cupofchiaa</a>
-    <a href="index.html" class="nav-work">WORK</a>
-  </nav>
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-name">XIYA WANG</a>
 
-  <main id="cv-main"></main>
+    <div class="sidebar-section">
+      <a href="index.html" class="sidebar-section-label">WORK</a>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-section-label active">INFO</span>
+    </div>
+
+    <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener" class="sidebar-ig">@cupofchiaa</a>
+  </aside>
+
+  <main>
+    <div class="cv-content" id="cv-main"></div>
+  </main>
 
   <script src="cv-config.js"></script>
   <script>
@@ -173,11 +227,11 @@
 
     // CV sections in display order
     const sections = [
-      { key: 'education',           label: 'Education' },
-      { key: 'soloExhibitions',     label: 'Solo Exhibitions' },
-      { key: 'groupExhibitions',    label: 'Group Exhibitions' },
-      { key: 'awardsAndResidencies',label: 'Awards & Residencies' },
-      { key: 'press',               label: 'Press' },
+      { key: 'education',            label: 'Education' },
+      { key: 'soloExhibitions',      label: 'Solo Exhibitions' },
+      { key: 'groupExhibitions',     label: 'Group Exhibitions' },
+      { key: 'awardsAndResidencies', label: 'Awards & Residencies' },
+      { key: 'press',                label: 'Press' },
     ];
 
     sections.forEach(function(section) {

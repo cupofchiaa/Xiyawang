@@ -19,6 +19,7 @@
       --ink: #1a1814;
       --ink-light: #9a9690;
       --rule: #e6e3dd;
+      --sidebar-w: 160px;
     }
 
     body {
@@ -30,68 +31,91 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    nav {
+    /* ── SIDEBAR ── */
+    .sidebar {
       position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
+      top: 0; right: 0;
+      width: var(--sidebar-w);
+      height: 100vh;
+      padding: 40px 36px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 40px;
+      flex-direction: column;
       background: var(--bg);
+      z-index: 100;
     }
 
-    .nav-logo {
+    .sidebar-name {
       font-size: 16px;
-      text-decoration: none;
+      letter-spacing: 0.06em;
       color: var(--ink);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 28px;
     }
 
-    .nav-info {
-      font-size: 16px;
-      text-decoration: none;
+    .sidebar-section {
+      margin-bottom: 16px;
+    }
+
+    .sidebar-section-label {
+      display: block;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+      letter-spacing: 0.08em;
       color: var(--ink-light);
+      margin-bottom: 6px;
+      text-decoration: none;
       transition: color 0.15s;
     }
 
-    .nav-info:hover { color: var(--ink); }
+    .sidebar-section-label.active { color: var(--ink); }
+    a.sidebar-section-label:hover { color: var(--ink); }
 
-    /* ── FILTER BAR ── */
-    .filter-bar {
-      position: fixed;
-      top: 65px; left: 0; right: 0;
-      z-index: 99;
+    .sidebar-filters {
       display: flex;
-      gap: 28px;
-      padding: 12px 40px;
-      background: var(--bg);
-      border-bottom: 1px solid var(--rule);
+      flex-direction: column;
+      gap: 5px;
+      padding-left: 10px;
     }
 
     .filter-btn {
       font-family: 'Times New Roman', Times, serif;
-      font-size: 16px;
+      font-size: 15px;
       background: none;
       border: none;
       color: var(--ink-light);
       cursor: pointer;
       padding: 0;
+      text-align: left;
       transition: color 0.15s;
     }
 
     .filter-btn:hover,
     .filter-btn.active { color: var(--ink); }
 
-    main { padding-top: 112px; }
+    .sidebar-ig {
+      margin-top: auto;
+      font-size: 15px;
+      color: var(--ink-light);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .sidebar-ig:hover { color: var(--ink); }
+
+    /* ── MAIN ── */
+    main {
+      padding: 60px calc(var(--sidebar-w) + 60px) 0 60px;
+    }
 
     .grid {
       display: block;
-      max-width: 960px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
     .work-item {
-      padding: 80px 40px;
+      padding: 80px 0;
       opacity: 0;
       animation: fadeIn 0.5s ease forwards;
     }
@@ -177,42 +201,69 @@
     [id^='shopify-mount-'] { display: none !important; }
 
     footer {
-      border-top: 1px solid var(--rule);
-      padding: 22px 40px;
-      display: flex;
-      justify-content: space-between;
+      padding: 40px 60px;
     }
 
-    footer span, footer a {
+    footer span {
       font-family: 'Times New Roman', Times, serif;
       font-size: 16px;
       color: var(--ink-light);
-      text-decoration: none;
     }
 
-    footer a:hover { color: var(--ink); }
-
+    /* ── MOBILE ── */
     @media (max-width: 680px) {
-      nav { padding: 18px 20px; }
-      .filter-bar { top: 57px; padding: 10px 20px; gap: 20px; }
-      main { padding-top: 104px; }
-      .work-item { padding: 48px 20px; }
-      footer { padding: 20px; flex-direction: column; gap: 6px; }
+      .sidebar {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 18px 20px 14px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .sidebar-name { margin-bottom: 10px; }
+
+      .sidebar-section { margin-bottom: 0; }
+
+      .sidebar-section-label { display: none; }
+
+      .sidebar-filters {
+        flex-direction: row;
+        gap: 20px;
+        padding-left: 0;
+      }
+
+      .sidebar-ig { display: none; }
+
+      main { padding: 100px 20px 0 20px; }
+
+      .work-item { padding: 48px 0; }
+
+      footer { padding: 32px 20px; }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener" class="nav-logo">@cupofchiaa</a>
-    <a href="cv.html" class="nav-info">INFO</a>
-  </nav>
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-name">XIYA WANG</a>
 
-  <div class="filter-bar">
-    <button class="filter-btn active" data-filter="printmaking">Printmaking</button>
-    <button class="filter-btn" data-filter="painting">Paintings</button>
-    <button class="filter-btn" data-filter="sketches">Sketches</button>
-  </div>
+    <div class="sidebar-section">
+      <span class="sidebar-section-label active">WORK</span>
+      <div class="sidebar-filters">
+        <button class="filter-btn active" data-filter="painting">Paintings</button>
+        <button class="filter-btn" data-filter="printmaking">Printmaking</button>
+        <button class="filter-btn" data-filter="sketches">Sketches</button>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <a href="cv.html" class="sidebar-section-label">INFO</a>
+    </div>
+
+    <a href="https://www.instagram.com/cupofchiaa" target="_blank" rel="noopener" class="sidebar-ig">@cupofchiaa</a>
+  </aside>
 
   <main>
     <div class="grid" id="grid"></div>
@@ -275,8 +326,8 @@
         '</div>' +
         descBlock;
 
-      // hide non-printmaking on initial load
-      if ((work.category || 'printmaking') !== 'printmaking') {
+      // hide non-paintings on initial load
+      if ((work.category || 'painting') !== 'painting') {
         item.style.display = 'none';
       }
 
@@ -294,7 +345,8 @@
           item.style.display = item.dataset.category === filter ? '' : 'none';
         });
       });
-    });  </script>
+    });
+  </script>
 
 </body>
 </html>
