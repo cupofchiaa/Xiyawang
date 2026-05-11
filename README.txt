@@ -47,10 +47,10 @@ Each artwork looks like this:
 
 ```
 {
-  title: "Lotus",
-  titleChinese: "荷(hé)",       ← optional, delete this line if not needed
-  medium: "Linoleum block print",
-  dimensions: '9" × 9"',        ← optional, leave as "" if you don't want to show this
+  title: "Stray Cats in Hawaii I",
+  titleChinese: "夏威夷的野猫",       ← optional, delete this line if not needed
+  medium: "Lithograph on paper",
+  dimensions: '???"',        ← optional, leave as "" if you don't want to show this
   category: "printmaking",       ← must be: "printmaking", "painting", or "sketches"
   image: "images/lotus.jpg",     ← filename of the image you added to the images/ folder
   originalAvailable: true,       ← set to true if you're open to selling the original
