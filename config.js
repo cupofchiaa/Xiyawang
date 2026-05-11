@@ -1,6 +1,6 @@
 const WORKS = [
   {
-    title: "Lotus",
+    title: "!!!!",
     titleChinese: "荷(hé)",
     medium: "Linoleum block print",
     dimensions: '9" × 9"',
