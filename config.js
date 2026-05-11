@@ -196,8 +196,8 @@ const WORKS = [
   },
   // Sketches — add entries with category: "sketches"
   {
-    title: "Fruits of Passion",
-    medium: "Linocut",
+    title: "march 2026",
+    medium: "pen on paper",
     dimensions: "",
     category: "sketches",
     image: "images/fruits-of-passion.jpg",
