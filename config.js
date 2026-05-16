@@ -65,7 +65,7 @@ const WORKS = [
 
   // Paintings
   {
-    title: "Untitled i",
+    title: "Taking My Brushes For a Walk #1",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
@@ -75,7 +75,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled ii",
+    title: "Taking My Brushes For a Walk #2",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
@@ -85,7 +85,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled iii",
+    title: "Taking My Brushes For a Walk #3",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
@@ -95,7 +95,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled iv",
+    title: "Taking My Brushes For a Walk #4",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
@@ -105,7 +105,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled v",
+    title: "Taking My Brushes For a Walk #5",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
@@ -115,7 +115,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled vi",
+    title: "Too Comfortable",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
@@ -125,7 +125,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled vii",
+    title: "Columbus Circle",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
@@ -136,7 +136,7 @@ const WORKS = [
   },
   {
     title: "Untitled viii",
-    medium: "Oil on canvas",
+    medium: "Watercolor on Paper",
     dimensions: "",
     category: "painting",
     image: "images/IMG_5331.jpg",
@@ -146,7 +146,7 @@ const WORKS = [
   },
   {
     title: "Untitled ix",
-    medium: "Oil on canvas",
+    medium: "Watercolor on Paper",
     dimensions: "",
     category: "painting",
     image: "images/IMG_5333.jpg",
@@ -155,8 +155,8 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled x",
-    medium: "Oil on canvas",
+    title: "Siblings Rivalry",
+    medium: "Charcoal on Paper",
     dimensions: "",
     category: "painting",
     image: "images/IMG_5336.jpg",
@@ -165,7 +165,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled xi",
+    title: "Sketch",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
