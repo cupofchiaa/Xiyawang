@@ -200,7 +200,7 @@ const WORKS = [
     medium: "pen on paper",
     dimensions: "",
     category: "sketches",
-    image: "images/fruits-of-passion.jpg",
+    image: "images/IMG_9056.jpeg",
     originalAvailable: false,
     shopifyProductId: "",
     description: "Debuted March 26, 2022 at MOMO SUSHI, 239 Park Ave S, New York, NY.",
