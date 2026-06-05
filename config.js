@@ -105,7 +105,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Taking My Brushes For a Walk #5",
+    title: "Remedios",
     medium: "Oil on canvas",
     dimensions: "",
     category: "painting",
