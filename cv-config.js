@@ -27,8 +27,10 @@ const CV = {
   ],
 
   awardsAndResidencies: [
+    { year: "2026", text: "Semi-Abstract Scholarship (×2), <em></em>, Art Students League of New York, New York, NY" },
     { year: "2025", text: "Red Dot, <em>Student Salons — Garin Baker</em>, Art Students League of New York, New York, NY" },
     { year: "2023", text: "Blue Dot (×2), <em>Student Salons — Umakanth Thurmugoti</em>, Art Students League of New York, New York, NY" },
+    
   ],
 
   press: [
