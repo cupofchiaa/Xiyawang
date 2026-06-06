@@ -14,7 +14,7 @@ const CV = {
   ],
 
   soloExhibitions: [
-    { year: "——", text: "Exhibition Title, Venue, City" },
+    // { year: "——", text: "Exhibition Title, Venue, City" },
   ],
 
   groupExhibitions: [
@@ -34,9 +34,7 @@ const CV = {
   ],
 
   press: [
-    { year: "2026", text: <a href="https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html" target="_blank" rel="noopener">
-"Springs Projects: Concerted Vibes," Two Coats of Paint
-</a> },
+    { year: "2026", text: '<a href="https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html" target="_blank" rel="noopener"> "Springs Projects: Concerted Vibes," Two Coats of Paint </a>' },
   ],
-
+  
 };
