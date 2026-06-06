@@ -34,7 +34,9 @@ const CV = {
   ],
 
   press: [
-    { year: "2026", text: "\"Springs Projects: Concerted Vibes,\" <a href='https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html' target='_blank' rel='noopener'>Two Coats of Paint</a>" },
+    { year: "2026", text: <a href="https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html" target="_blank" rel="noopener">
+"Springs Projects: Concerted Vibes," Two Coats of Paint
+</a> },
   ],
 
 };
