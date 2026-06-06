@@ -67,7 +67,7 @@ const WORKS = [
   {
     title: "Taking My Brushes For a Walk #1",
     medium: "Oil on canvas",
-    dimensions: "",
+    dimensions: "30"x30"",
     category: "painting",
     image: "images/IMG_5300.jpg",
     originalAvailable: true,
@@ -77,7 +77,7 @@ const WORKS = [
   {
     title: "Taking My Brushes For a Walk #2",
     medium: "Oil on canvas",
-    dimensions: "",
+    dimensions: "30"x30"",
     category: "painting",
     image: "images/IMG_5306.jpg",
     originalAvailable: true,
@@ -87,7 +87,7 @@ const WORKS = [
   {
     title: "Taking My Brushes For a Walk #3",
     medium: "Oil on canvas",
-    dimensions: "",
+    dimensions: "30"x30"",
     category: "painting",
     image: "images/IMG_5309.jpg",
     originalAvailable: true,
@@ -97,7 +97,7 @@ const WORKS = [
   {
     title: "Taking My Brushes For a Walk #4",
     medium: "Oil on canvas",
-    dimensions: "",
+    dimensions: "30"x30"",
     category: "painting",
     image: "images/IMG_5313.jpg",
     originalAvailable: true,
@@ -107,7 +107,7 @@ const WORKS = [
   {
     title: "Remedios",
     medium: "Oil on canvas",
-    dimensions: "",
+    dimensions: "40"x30"",
     category: "painting",
     image: "images/IMG_5318.jpg",
     originalAvailable: true,
@@ -117,7 +117,7 @@ const WORKS = [
   {
     title: "Too Comfortable",
     medium: "Oil on canvas",
-    dimensions: "",
+    dimensions: "40"x30"",
     category: "painting",
     image: "images/IMG_5320.jpg",
     originalAvailable: true,
@@ -127,7 +127,7 @@ const WORKS = [
   {
     title: "Columbus Circle",
     medium: "Oil on canvas",
-    dimensions: "",
+    dimensions: "36"x24"",
     category: "painting",
     image: "images/IMG_5328.jpg",
     originalAvailable: true,
@@ -135,7 +135,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled viii",
+    title: "Untitled",
     medium: "Watercolor on Paper",
     dimensions: "",
     category: "painting",
@@ -145,7 +145,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Untitled ix",
+    title: "Untitled",
     medium: "Watercolor on Paper",
     dimensions: "",
     category: "painting",
@@ -157,7 +157,7 @@ const WORKS = [
   {
     title: "Siblings Rivalry",
     medium: "Charcoal on Paper",
-    dimensions: "",
+    dimensions: "20"x16"",
     category: "painting",
     image: "images/IMG_5336.jpg",
     originalAvailable: true,
