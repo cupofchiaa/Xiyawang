@@ -5,7 +5,7 @@ const WORKS = [
     medium: "Lithography",
     dimensions: '9"x12"',
     category: "printmaking",
-    image: "images/IMG_9067.jpg,
+    image: "images/IMG_9067.jpg",
     originalAvailable: true,
     shopifyProductId: "",
     description: "",
