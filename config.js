@@ -174,6 +174,7 @@ const WORKS = [
     originalAvailable: false,
     shopifyProductId: "",
     description: ".",
+    size: "small",
   },
   // Photography — add entries with category: "Photography"
   {
