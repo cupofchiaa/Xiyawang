@@ -13,7 +13,7 @@ const CV = {
     { year: "2018-2021", text: "BA, Rutgers University, NJ" },
   ],
   
-  exhibitions: [
+  Exhibitions: [
     { year: "2026", text: "<em>Juried Selection Exhibition</em>, Fridman Gallery, New York, NY" },
     { year: "2026", text: "<em>Personal Space</em>, Springs Projects, New York, NY" },
     { year: "2025", text: "<em>Annual Salon — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
