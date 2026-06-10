@@ -21,47 +21,7 @@ const WORKS = [
     shopifyProductId: "",
     description: "",
   },
-  {
-    title: "Buddhism Gestures",
-    medium: "Linocut",
-    dimensions: "",
-    category: "printmaking",
-    image: "images/buddhism-gestures.jpg",
-    originalAvailable: false,
-    shopifyProductId: "",
-    description: "Three mudras: Granting Wishes and Blessings (upper), Tantric Unity (left), and Teaching (right). Made for experimentation; occasionally gifted with print orders.",
-  },
-  {
-    title: "Where Flowers Bloom So Does Hope",
-    medium: "Linocut",
-    dimensions: "",
-    category: "printmaking",
-    image: "images/where-flowers-bloom.jpg",
-    originalAvailable: false,
-    shopifyProductId: "",
-    description: "",
-  },
-  {
-    title: "Floating Mountain",
-    titleChinese: "浮山",
-    medium: "Linocut",
-    dimensions: "",
-    category: "printmaking",
-    image: "images/floating-mountain.jpg",
-    originalAvailable: false,
-    shopifyProductId: "",
-    description: "Depicting the tea farm landscapes of Yunnan province in Southern China.",
-  },
-  {
-    title: "Fruits of Passion",
-    medium: "Linocut",
-    dimensions: "",
-    category: "printmaking",
-    image: "images/fruits-of-passion.jpg",
-    originalAvailable: false,
-    shopifyProductId: "",
-    description: "Debuted March 26, 2022 at MOMO SUSHI, 239 Park Ave S, New York, NY.",
-  },
+ 
 
   // Paintings
   {
