@@ -183,7 +183,7 @@ const WORKS = [
     medium: "pen on paper",
     dimensions: "",
     category: "photography",
-    image: "images/DSCF0707.jpeg",
+    image: "images/IMG_0003.jpeg",
     originalAvailable: false,
     shopifyProductId: "",
     description: ".",
