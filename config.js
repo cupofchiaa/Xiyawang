@@ -163,7 +163,8 @@ const WORKS = [
     image: "images/IMG_9056.jpeg",
     originalAvailable: false,
     shopifyProductId: "",
-    description: "Debuted March 26, 2022 at MOMO SUSHI, 239 Park Ave S, New York, NY.",
+    description: "",
+    size: "small",
   },
   {
     title: "march 2026",
