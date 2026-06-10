@@ -13,15 +13,19 @@ const CV = {
     { year: "2018-2021", text: "BA, Rutgers University, NJ" },
   ],
   
- groupExhibitions: [
-    { year: "2026", text: "<em>Juried Selection Exhibition</em>, Fridman Gallery, New York, NY" },
-    { year: "2026", text: "<em>Personal Space</em>, Springs Projects, New York, NY" },
-    { year: "2025", text: "<em>Annual Salon — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
-    { year: "2024", text: "<em>Annual Salon — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
-    { year: "2023", text: "<em>Annual Salon — Umakanth Thurmugoti</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
-    { year: "2022", text: "<em>Fruits of Passion</em>, 239 Park Ave S, New York, NY" },
+ soloExhibitions: [
+    // { year: "——", text: "Exhibition Title, Venue, City" },
   ],
 
+  groupExhibitions: [
+    { year: "2026", text: "Juried Selection Exhibition, Fridman Gallery, New York, NY" },
+    { year: "2026", text: "<em>Personal Space</em>, Springs Projects, New York, NY" },
+    { year: "2025", text: "<em>Student Salons — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
+    { year: "2024", text: "<em>Student Salons — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
+    { year: "2023", text: "<em>Student Salons — Umakanth Thurmugoti</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
+    { year: "2022", text: "<em>Fruits of Passion</em>, 239 Park Ave S, New York, NY" },
+  ],
+  
   awardsAndResidencies: [
     { year: "2026", text: "<em>Merit Scholarship in Painting</em>, Art Students League of New York, New York, NY" },
     { year: "2025", text: "<em>Red Dot Award (Best in Show), Student Salons — Garin Baker</em>, Art Students League of New York, New York, NY" },
