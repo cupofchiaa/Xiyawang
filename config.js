@@ -170,7 +170,7 @@ const WORKS = [
     title: "march 2026",
     medium: "pen on paper",
     dimensions: "",
-    category: "sketches",
+    category: "photography",
     image: "images/IMG_9056.jpeg",
     originalAvailable: false,
     shopifyProductId: "",
