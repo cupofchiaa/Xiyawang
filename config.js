@@ -179,7 +179,7 @@ const WORKS = [
   },
   // Photography — add entries with category: "Photography"
   {
-    title: "march 2026",
+    title: "Central Park",
     medium: "pen on paper",
     dimensions: "",
     category: "photography",
