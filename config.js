@@ -156,7 +156,7 @@ const WORKS = [
   },
   // Sketches — add entries with category: "sketches"
   {
-    title: "march 2026",
+    title: "March 2026",
     medium: "pen on paper",
     dimensions: "",
     category: "sketches",
@@ -167,8 +167,8 @@ const WORKS = [
     size: "small",
   },
   {
-    title: "march 2026",
-    medium: "pen on paper",
+    title: "Elena",
+    medium: "watercolor on paper",
     dimensions: "",
     category: "sketches",
     image: "images/DSCF0707.jpeg",
@@ -180,7 +180,7 @@ const WORKS = [
   // Photography — add entries with category: "Photography"
   {
     title: "Central Park",
-    medium: "pen on paper",
+    medium: "",
     dimensions: "",
     category: "photography",
     image: "images/IMG_0003.jpeg",
