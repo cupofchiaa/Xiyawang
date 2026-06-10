@@ -18,6 +18,9 @@ const CV = {
   ],
 
   groupExhibitions: [
+    
+    { year: "2026", text: "<em>In Plain Sight</em>,Greenwich Art Society, Greenwich, CT
+        Curated by Margaret Vega (Atlantic Gallery)" },
     { year: "2026", text: "<em>Final Project Exhibition</em>,The Painting Center, New York, NY" },
     { year: "2026", text: "<em>Juried Selection Exhibition</em>,Fridman Gallery, New York, NY" },
     { year: "2026", text: "<em>Personal Space</em>, Springs Projects, New York, NY" },
