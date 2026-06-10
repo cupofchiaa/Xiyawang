@@ -19,7 +19,7 @@ const CV = {
 
   groupExhibitions: [
     { year: "2026", text: "<em>Final Project Exhibition</em>,The Painting Center, New York, NY" },
-    { year: "2026", text: "<em>Juried Selection Exhibition</em>, Fridman Gallery, New York, NY" },
+    { year: "2026", text: "<em>Juried Selection Exhibition</em>,Fridman Gallery 169 Bowery, New York, NY, New York, NY" },
     { year: "2026", text: "<em>Personal Space</em>, Springs Projects, New York, NY" },
     { year: "2025", text: "<em>Student Salons — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
     { year: "2024", text: "<em>Student Salons — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
