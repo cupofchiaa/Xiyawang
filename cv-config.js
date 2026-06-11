@@ -16,7 +16,7 @@ const CV = {
 
   groupExhibitions: [
     { year: "2026", text: "<em>Incomplete & In Dialogue: Becoming Other</em>, curated by Marisela La Grave, Magnetic Laboratorium & Dark Sky Land, Inc., Santa Fe, NM" },
-    { year: "2026", text: "<em>In Plain Sight</em>, Greenwich Art Society, Greenwich, CT. Curated by Margaret Vega, Atlantic Gallery" },
+    { year: "2026", text: "<em>In Plain Sight</em>, curated by Margaret Vega (Atlantic Gallery), Greenwich Art Society, Greenwich, CT" },
     { year: "2026", text: "<em>Final Project Exhibition</em>, The Painting Center, New York, NY" },
     { year: "2026", text: "<em>Juried Selection Exhibition</em>, Fridman Gallery, New York, NY" },
     { year: "2026", text: "<em>Personal Space</em>, Springs Projects, New York, NY" },
