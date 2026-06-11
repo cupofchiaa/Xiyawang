@@ -9,7 +9,7 @@ const CV = {
   statement: "Visual artist based in New York City. Her practice centers on printmaking, oil painting, and photography, drawing from Chinese cultural heritage and a fascination with beauty that goes unnoticed in fast-paced urban environments. Raised across China and the United States, her work sits at the intersection of those two visual languages — exploring stillness, impermanence, and the textures of everyday life. Buddhist philosophy and personal memory are recurring touchstones.",
 
   education: [
-    { year: "2022-2026",      text: "Certificate Program - Painting, Art Students League of New York, New York, NY" },
+    { year: "2022-2026",      text: "Certificate Program, Painting, Art Students League of New York, New York, NY" },
     { year: "2018-2021", text: "BA, Rutgers University, NJ" },
   ],
   
