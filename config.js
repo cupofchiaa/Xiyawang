@@ -25,16 +25,6 @@ const WORKS = [
 
   // Paintings
   {
-    title: "Studio shot",
-    medium: "",
-    dimensions: '',
-    category: "painting",
-    image: "images/31A_00072.jpeg",
-    originalAvailable: false,
-    shopifyProductId: "",
-    description: "",
-  },
-  {
     title: "Taking My Brushes For a Walk #1",
     medium: "Oil on canvas",
     dimensions: '30"x30"',
