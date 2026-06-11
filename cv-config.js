@@ -13,16 +13,15 @@ const CV = {
     { year: "2018-2021", text: "BA, Rutgers University, NJ" },
   ],
   
- soloExhibitions: [
+  soloExhibitions: [
     // { year: "——", text: "Exhibition Title, Venue, City" },
   ],
 
   groupExhibitions: [
-    { year: "2026", text: "<em>Incomplete & In Dialogue: Becoming Othec</em>,curated by Marisela La Grave, Magnetic Laboratorium & Dark Sky Land, Inc., Santa Fe, NM" },
-    { year: "2026", text: "<em>In Plain Sight</em>,Greenwich Art Society, Greenwich, CT
-        Curated by Margaret Vega (Atlantic Gallery)" },
-    { year: "2026", text: "<em>Final Project Exhibition</em>,The Painting Center, New York, NY" },
-    { year: "2026", text: "<em>Juried Selection Exhibition</em>,Fridman Gallery, New York, NY" },
+    { year: "2026", text: "<em>Incomplete & In Dialogue: Becoming Other</em>, curated by Marisela La Grave, Magnetic Laboratorium & Dark Sky Land, Inc., Santa Fe, NM" },
+    { year: "2026", text: "<em>In Plain Sight</em>, Greenwich Art Society, Greenwich, CT. Curated by Margaret Vega, Atlantic Gallery" },
+    { year: "2026", text: "<em>Final Project Exhibition</em>, The Painting Center, New York, NY" },
+    { year: "2026", text: "<em>Juried Selection Exhibition</em>, Fridman Gallery, New York, NY" },
     { year: "2026", text: "<em>Personal Space</em>, Springs Projects, New York, NY" },
     { year: "2025", text: "<em>Student Salons — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
     { year: "2024", text: "<em>Student Salons — Garin Baker</em>, Phyllis Harriman Mason Gallery, Art Students League of New York, New York, NY" },
