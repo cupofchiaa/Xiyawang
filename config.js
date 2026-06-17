@@ -30,9 +30,6 @@ const WORKS = [
     dimensions: '30"x30"',
     category: "painting",
     image: "images/IMG_5300.jpg",
-    originalAvailable: true,
-    shopifyProductId: "",
-    description: "",
   },
   {
     title: "Taking My Brushes For a Walk #2",
