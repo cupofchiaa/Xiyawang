@@ -5,7 +5,7 @@ const CV = {
   basedIn: "New York, NY",
   email: "xiyawang33@gmail.com",
 
-  statement: "Visual artist based in New York City. Her practice centers on printmaking, oil painting, and photography, drawing from Chinese cultural heritage and a fascination with beauty that goes unnoticed in fast-paced urban environments. Raised across China and the United States, her work sits at the intersection of those two visual languages — exploring stillness, impermanence, and the textures of everyday life. Buddhist philosophy and personal memory are recurring touchstones.",
+  statement: "I’m a Chinese artist based in New York City, working in oil painting, and printmaking. It is coming to the US to New York City that inspired me to become an artist. Right after I graduated from college I started the four-year training of figure painting and drawing in Art Students League to put “drawing representationally” in to my tool box. As much as I love painting from observation, I also love exploring the limitless possibilities of mark making with oil paint. When I have a oil paint on my hand I feel like a kid playing mud, and this is the only time I feel I could really relax my mind and open the curious part of my body to receive the beauty of this painting process. Drawing from the experience of painting both representationally and abstraction, I started to explore my own language in drawing and printmaking, I love using chaos to create order, and use marks that seemingly abstract(or crazy) to compose an image that I want to stay a long time with. ",
 
   education: [
   {
