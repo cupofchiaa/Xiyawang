@@ -37,8 +37,14 @@ const CV = {
     { year: "2025", text: "<em>Red Dot Award (Best in Show), Student Salons — Garin Baker</em>, Art Students League of New York, New York, NY" },
     { year: "2023", text: "<em>Blue Dot (Second Prize), Student Salons — Umakanth Thurmugoti</em>, Art Students League of New York, New York, NY" },
   ],
-
-  press: [
-    { year: "2026", text: '<a href="https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html" target="_blank" rel="noopener">"Springs Projects: Concerted Vibes," Two Coats of Paint</a>' },
-  ],
+press: [
+  {
+    year: "2026",
+    text: '<a href="https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html" target="_blank" rel="noopener">"Springs Projects: Concerted Vibes," Two Coats of Paint</a>'
+  },
+  {
+    year: "2026",
+    text: 'Al-Tiba9 Art Magazine, Issue 22. <em>In Motion</em>. Featured artwork and artist statement.'
+  },
+],
 };
