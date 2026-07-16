@@ -82,7 +82,7 @@ const WORKS = [
     description: "",
   },
   {
-    title: "Columbus Circle",
+    title: "In Motion",
     medium: "Oil on canvas",
     dimensions: '36"x24"',
     category: "painting",
