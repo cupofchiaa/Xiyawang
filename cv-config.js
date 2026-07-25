@@ -37,7 +37,7 @@ const CV = {
     { year: "2025", text: "<em>Red Dot Award (Best in Show), Student Salons — Garin Baker</em>, Art Students League of New York, New York, NY" },
     { year: "2023", text: "<em>Blue Dot (Second Prize), Student Salons — Umakanth Thurmugoti</em>, Art Students League of New York, New York, NY" },
   ],
-press: [
+  press: [
   {
     year: "2026",
     text: '<a href="https://www.santafenewmexican.com/pasatiempo/works-in-progress/article_4c2231a3-cfde-47dc-9b6e-28634d860c31.html" target="_blank" rel="noopener"><em>Works in Progress</em>, <em>Pasatiempo</em>, The Santa Fe New Mexican</a>'
