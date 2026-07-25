@@ -40,11 +40,18 @@ const CV = {
 press: [
   {
     year: "2026",
-    text: '<a href="https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html" target="_blank" rel="noopener">"Springs Projects: Concerted Vibes," Two Coats of Paint</a>'
+    text: '<a href="https://www.santafenewmexican.com/pasatiempo/works-in-progress/article_4c2231a3-cfde-47dc-9b6e-28634d860c31.html" target="_blank" rel="noopener"><em>Works in Progress</em>, <em>Pasatiempo</em>, The Santa Fe New Mexican</a>'
+  },
+  {
+    year: "2026",
+    text: '<a href="https://www.greenwichsentinel.com/2026/03/18/in-plain-sight-greenwich-art-societys-first-online-juried-exhibition/" target="_blank" rel="noopener"><em>In Plain Sight – Greenwich Art Society\'s First Online Juried Exhibition</em>, <em>Greenwich Sentinel</em></a>'
+  },
+  {
+    year: "2026",
+    text: '<a href="https://twocoatsofpaint.com/2026/03/springs-projects-concerted-vibes.html" target="_blank" rel="noopener"><em>Springs Projects: Concerted Vibes</em>, <em>Two Coats of Paint</em></a>'
   },
   {
     year: "2026",
     text: 'Al-Tiba9 Art Magazine, Issue 22. <em>In Motion</em>. Featured artwork and artist statement.'
   },
 ],
-};
