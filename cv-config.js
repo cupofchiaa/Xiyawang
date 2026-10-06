@@ -23,6 +23,18 @@ var CV = {
   groupExhibitions: [
     {
       year: "2026",
+      text: "<em>In Circles</em>, curated by Andy Cao, 47 Thames st, Brooklyn, NY"
+    },
+    {
+      year: "2026",
+      text: "<em>Around, Above, Below</em>, Van der Plas Gallery, New York, NY"
+    },
+    {
+      year: "2026",
+      text: "<em>Incomplete & In Dialogue: Becoming Other</em>, curated by Marisela La Grave, Magnetic Laboratorium & Dark Sky Land, Inc., Santa Fe, NM"
+    },
+    {
+      year: "2026",
       text: "<em>Incomplete & In Dialogue: Becoming Other</em>, curated by Marisela La Grave, Magnetic Laboratorium & Dark Sky Land, Inc., Santa Fe, NM"
     },
     {
