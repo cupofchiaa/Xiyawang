@@ -4,9 +4,7 @@ var CV = {
   location: "Changchun, China",
   basedIn: "New York, NY",
   email: "xiyawang33@gmail.com",
-
-  statement: "I'm a Chinese artist based in New York City, working in oil painting and printmaking. Coming to the United States, and especially New York City, inspired me to become an artist. Right after graduating from college, I began four years of figure-painting and drawing training at the Art Students League of New York to put representational drawing into my toolbox. As much as I love painting from observation, I also love exploring the limitless possibilities of mark-making with oil paint. When I have oil paint on my hands, I feel like a kid playing with mud. It is one of the only times I can truly relax my mind and open the curious part of myself to the beauty of the painting process. Drawing from my experience with both representational painting and abstraction, I have started to explore my own language in drawing and printmaking. I love using chaos to create order and using marks that may seem abstract, or even crazy, to compose an image that I want to spend a long time with.",
-
+  
   education: [
     {
       year: "2022-2026",
