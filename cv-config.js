@@ -4,7 +4,6 @@ var CV = {
   location: "Changchun, China",
   basedIn: "New York, NY",
   email: "xiyawang33@gmail.com",
-  
   education: [
     {
       year: "2022-2026",
@@ -15,9 +14,6 @@ var CV = {
       text: "B.A., Finance, Minor in Art, Rutgers University, New Jersey"
     }
   ],
-
-  soloExhibitions: [],
-
   groupExhibitions: [
     {
       year: "2026",
