@@ -104,7 +104,7 @@ var CV = {
     },
     {
       year: "2026",
-      text: "Al-Tiba9 Art Magazine, Issue 22. <em>In Motion</em>. Featured artwork and artist statement."
+      text: "<em>Al-Tiba9 Art Magazine</em>, Issue 22. Featured Artist, Barcelona, Spain.."
     }
   ]
 };
