@@ -88,6 +88,10 @@ var CV = {
   press: [
     {
       year: "2026",
+      text: '<a href="https://dejahore.com/art-of-the-week" target="_blank" rel="noopener noreferrer"><em>Art of the Week</em>, <em>Dejahore</em>, <em>Online Feature</em></a>'
+    },
+    {
+      year: "2026",
       text: '<a href="https://www.santafenewmexican.com/pasatiempo/works-in-progress/article_4c2231a3-cfde-47dc-9b6e-28634d860c31.html" target="_blank" rel="noopener noreferrer"><em>Works in Progress</em>, <em>Pasatiempo</em>, <em>The Santa Fe New Mexican</em></a>'
     },
     {
